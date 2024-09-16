@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: darksalmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            width: 40%;
+            height: 50%;
+            background-color: rgb(228, 118, 78);
+            border-radius: 3%;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 90%;
+        }
+        input{
+            padding: 3%;
+            width: 80%;
+            margin: 3%;
+            border: none;
+        }
+        button{
+            padding: 3%;
+            width: 30%;
+            border-radius: 2%;
+            margin: 3%;
+            border: none;
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form onsubmit=func(event)>
+            <h2>login</h2>
+        <input type="text" placeholder="name" id="name">
+        <input type="email" placeholder="email" id="email">
+        <input type="password" placeholder="password" id="password">
+        <button>Submit</button>
+    </form>
+    </div>
+</body>
+</html>
